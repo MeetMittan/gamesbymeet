@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 //canvas.style.background = "aqua";
 const context = canvas.getContext("2d");
-canvas.style.backgroundImage = "url('../images/back.png')";
+canvas.style.backgroundImage = "url('images/back.png')";
 canvas.style.backgroundSize = "cover";
 //PLAYER CREATION CLASS
 
@@ -87,16 +87,16 @@ this.frames++;
 
 
 let playerStandRightimg = new Image();
-playerStandRightimg.src = "../images/spriteStandRight.png";
+playerStandRightimg.src = "images/spriteStandRight.png";
 
 let playerRunRightimg = new Image();
-playerRunRightimg.src = "../images/spriteRunRight.png";
+playerRunRightimg.src = "images/spriteRunRight.png";
 
 let playerRunLeftimg = new Image();
-playerRunLeftimg.src = "../images/spriteRunLeft.png";
+playerRunLeftimg.src = "images/spriteRunLeft.png";
 
 let playerStandLeftimg = new Image();
-playerStandLeftimg.src = "../images/spriteStandLeft.png";
+playerStandLeftimg.src = "images/spriteStandLeft.png";
 
 
 
@@ -110,7 +110,7 @@ class platforms {
 
     draw() {
         let platformsimg= new Image();
-        platformsimg.src = "../images/platform.png";
+        platformsimg.src = "images/platform.png";
         context.drawImage(platformsimg, this.position.x, this.position.y, this.width, this.height);
         //context.fillStyle = "blue";
         //context.fillRect(this.position.x, this.position.y, this.width, this.height);
@@ -126,7 +126,7 @@ class hillsImg{
 
     draw() {
         let hillsimg= new Image();
-        hillsimg.src = "../images/hills.png";
+        hillsimg.src = "images/hills.png";
         context.drawImage(hillsimg, this.position.x, this.position.y);
     }
 } 
